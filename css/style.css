@@ -795,10 +795,13 @@ div.subscription-box {
   left: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.2);
+
+  opacity: 1;
+  transition: opacity 2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
-  visibility: hidden;
+  /* visibility: hidden; */
   opacity: 0;
   pointer-events: none;
 }
@@ -822,11 +825,11 @@ div.subscription-box {
 
 .btn-close {
   position: absolute;
-  display: inline-flex;
   top: 8px;
   right: 8px;
 
-  padding: 10px;
+  width: 30px;
+  height: 30px;
 
   border-radius: 50%;
   background: #ffffff;
@@ -836,7 +839,7 @@ div.subscription-box {
 .img-close {
   fill: currentColor;
 
-  transition: 250s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-close:hover .img-close,
