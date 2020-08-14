@@ -65,7 +65,7 @@
             <br />
             для вашего бизнеса
           </h1>
-          <a href="#" class="button">Заказать услугу</a>
+          <a href="#" class="button" data-modal-open>Заказать услугу</a>
         </div>
       </section>
 
@@ -582,9 +582,9 @@
     </footer>
 
     <!-- Модальное окно -->
-    <div class="backdrop is-hidden">
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="btn-close">
+        <button class="btn-close" data-modal-close>
           <svg class="img-close" width="11" height="11">
             <use href="./img/svg/sprite.svg#icon-close"></use>
           </svg>
@@ -592,5 +592,6 @@
         <p>Какой-то текст</p>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
